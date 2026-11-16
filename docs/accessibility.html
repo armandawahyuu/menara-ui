@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility · Menara UI</title>
+<meta name="description" content="Menara UI — free HTML/CSS admin dashboard and storefront template.">
+<script data-mn-theme-init>try{var t=localStorage.getItem('mn-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/menara.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232451c7'/%3E%3Cpath d='M16 6v4M11 26l5-16 5 16M13 20h6' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="mn-skip" href="#main">Skip to content</a>
+<header class="mn-shop-header">
+  <div class="mn-container">
+    <a class="mn-brand" href="../index.html"><span class="mn-brand-mark"><svg class="mn-icon" aria-hidden="true"><use href="#i-tower"/></svg></span><span><b>Menara</b><small>Docs</small></span></a>
+    <nav aria-label="Site"><a href="../index.html">Templates</a><a href="index.html">Docs</a><a href="https://github.com/armandawahyuu/menara-ui">GitHub</a></nav>
+    <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" data-mn-theme-toggle aria-label="Switch to dark mode"><svg class="mn-icon" aria-hidden="true"><use href="#i-moon"/></svg></button>
+  </div>
+</header>
+<div class="mn-container mn-doc">
+  <nav class="mn-doc-nav" aria-label="Documentation"><a href="index.html">Getting started</a><a href="theming.html">Theming</a><a href="components.html">Components</a><a href="layout.html">Layout</a><a href="accessibility.html" aria-current="page">Accessibility</a></nav>
+  <main id="main" class="mn-prose">
+
+<h1>Accessibility</h1>
+<h2>Built in</h2>
+<ul>
+<li>Text contrast of at least 4.5:1 in light and dark themes. Muted text is tuned for both.</li>
+<li>Visible focus rings on every interactive element (<code>:focus-visible</code>).</li>
+<li>Touch targets of at least 44px for buttons, nav links, inputs and switches.</li>
+<li>A skip link (<code>.mn-skip</code>) on every template.</li>
+<li>Tabs follow the ARIA pattern: arrow keys, Home and End.</li>
+<li>The modal uses native <code>&lt;dialog&gt;</code>: Escape closes it and focus returns to the opener.</li>
+<li>The mobile sidebar closes with Escape. The theme button exposes <code>aria-pressed</code>.</li>
+<li><code>prefers-reduced-motion</code> turns off animations, including the ticker.</li>
+<li>No text smaller than 12px.</li>
+</ul>
+<h2>Your part</h2>
+<ul>
+<li>Give icon-only buttons an <code>aria-label</code>.</li>
+<li>Label every input with <code>&lt;label for&gt;</code>. Point errors at the field with <code>aria-describedby</code> and add <code>aria-invalid="true"</code>.</li>
+<li>Give charts an <code>aria-label</code> with the actual numbers.</li>
+<li>Don’t rely on color alone: status badges also carry words.</li>
+<li>Check contrast again if you change brand colors.</li>
+</ul>
+  </main>
+</div>
+<script src="../js/menara.js" defer></script>
+</body>
+</html>

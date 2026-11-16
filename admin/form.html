@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New product · Menara UI</title>
+<meta name="description" content="Menara UI — free HTML/CSS admin dashboard and storefront template.">
+<script data-mn-theme-init>try{var t=localStorage.getItem('mn-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/menara.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232451c7'/%3E%3Cpath d='M16 6v4M11 26l5-16 5 16M13 20h6' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="mn-skip" href="#main">Skip to content</a>
+<div class="mn-app">
+  <aside class="mn-sidebar" aria-label="Main navigation">
+    <a class="mn-brand" href="index.html"><span class="mn-brand-mark"><svg class="mn-icon" aria-hidden="true"><use href="#i-tower"/></svg></span><span><b>Menara</b><small>Admin</small></span></a>
+    <nav class="mn-nav">
+      <div class="mn-nav-label">Overview</div><a class="mn-nav-link" href="index.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-home"/></svg>Dashboard</a><a class="mn-nav-link" href="analytics.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-chart"/></svg>Analytics</a><a class="mn-nav-link" href="reports.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-receipt"/></svg>Reports</a><div class="mn-nav-label">Store</div><a class="mn-nav-link" href="table.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-table"/></svg>Orders<span class="mn-nav-count">12</span></a><a class="mn-nav-link" href="form.html" aria-current="page"><svg class="mn-icon" aria-hidden="true"><use href="#i-package"/></svg>Products</a><a class="mn-nav-link" href="import.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-upload"/></svg>Import</a><div class="mn-nav-label">Settings</div><a class="mn-nav-link" href="users.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-users"/></svg>Users</a><a class="mn-nav-link" href="settings.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-settings"/></svg>Settings</a>
+    </nav>
+    <div class="mn-sidebar-foot">
+      <a class="mn-nav-link" href="../index.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-layers"/></svg>All templates</a>
+      <a class="mn-nav-link" href="login.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-logout"/></svg>Sign out</a>
+    </div>
+  </aside>
+  <div class="mn-scrim"></div>
+  <div class="mn-main">
+    <header class="mn-topbar">
+      <button type="button" class="mn-btn mn-btn-outline mn-btn-icon mn-burger" data-mn-sidebar-toggle aria-label="Open menu" aria-expanded="false"><svg class="mn-icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+      <label class="mn-search" style="width:min(360px,100%)"><span class="mn-sr-only">Search</span><svg class="mn-icon" aria-hidden="true"><use href="#i-search"/></svg><input class="mn-input" type="search" placeholder="Search orders, products…"></label>
+      <div class="mn-topbar-actions">
+        <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" data-mn-theme-toggle aria-label="Switch to dark mode"><svg class="mn-icon" aria-hidden="true"><use href="#i-moon"/></svg></button>
+        <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" aria-label="Notifications"><svg class="mn-icon" aria-hidden="true"><use href="#i-bell"/></svg></button>
+        <details class="mn-dropdown">
+          <summary class="mn-btn mn-btn-ghost" aria-label="Account menu"><span class="mn-avatar">AR</span></summary>
+          <div class="mn-menu">
+            <a href="users.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-user"/></svg>Profile</a>
+            <a href="settings.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-settings"/></svg>Settings</a>
+            <hr>
+            <a href="login.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-logout"/></svg>Sign out</a>
+          </div>
+        </details>
+      </div>
+    </header>
+    <main class="mn-content" id="main">
+      <div class="mn-page-head">
+        <div><nav class="mn-crumbs" aria-label="Breadcrumb"><a href="index.html">Dashboard</a> / <span>Products</span></nav><h1>New product</h1></div>
+        
+      </div>
+
+      <form class="mn-grid mn-grid-main" onsubmit="event.preventDefault();Menara.toast('Saved (demo)')" novalidate>
+        <section class="mn-card">
+          <div class="mn-card-head"><div><h2>Product details</h2><p>What buyers see in the store</p></div></div>
+          <div class="mn-card-body">
+            <div class="mn-field"><label class="mn-label" for="name">Name <span class="mn-req" aria-hidden="true">*</span></label><input class="mn-input" id="name" value="Cloud Storage 100 GB" required></div>
+            <div class="mn-form-grid">
+              <div class="mn-field"><label class="mn-label" for="price">Price</label><div class="mn-input-group"><span>$</span><input class="mn-input mn-num" id="price" inputmode="decimal" value="12.00"></div></div>
+              <div class="mn-field"><label class="mn-label" for="cost">Cost <span class="mn-muted">(optional)</span></label><div class="mn-input-group"><span>$</span><input class="mn-input mn-num" id="cost" inputmode="decimal" value="7.50"></div><p class="mn-help">Used to calculate profit in reports.</p></div>
+              <div class="mn-field"><label class="mn-label" for="cat">Category</label><select class="mn-select" id="cat"><option>Storage</option><option>Streaming</option><option>Design</option><option>Books</option></select></div>
+              <div class="mn-field"><label class="mn-label" for="slug">URL slug</label><input class="mn-input is-invalid" id="slug" value="cloud storage" aria-invalid="true" aria-describedby="slug-err"><p class="mn-error" id="slug-err">Use lowercase letters, numbers and dashes only.</p></div>
+            </div>
+            <div class="mn-field"><label class="mn-label" for="desc">Description</label><textarea class="mn-textarea" id="desc">100 GB of private cloud storage for 30 days. Instant activation code.</textarea></div>
+            <label class="mn-file"><input type="file" accept="image/*"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-upload"/></svg><b>Upload a cover image</b><span>PNG or JPG, up to 2 MB</span></label>
+          </div>
+        </section>
+        <div class="mn-stack">
+          <section class="mn-card">
+            <div class="mn-card-head"><div><h2>Visibility</h2></div></div>
+            <div class="mn-card-body">
+              <label class="mn-switch"><input type="checkbox" checked> Show in store</label><br>
+              <label class="mn-switch"><input type="checkbox"> Mark as “Best seller”</label>
+              <fieldset style="border:0;padding:0;margin-top:var(--mn-space-3)"><legend class="mn-label">Delivery</legend>
+                <label class="mn-check"><input type="radio" name="delivery" checked> Instant code</label><br>
+                <label class="mn-check"><input type="radio" name="delivery"> Manual by admin</label>
+              </fieldset>
+            </div>
+          </section>
+          <div class="mn-alert mn-alert-info"><svg class="mn-icon" aria-hidden="true"><use href="#i-info"/></svg><div>Prices are shown with tax included. Change the currency in <a href="settings.html">Settings</a>.</div></div>
+        </div>
+        <div class="mn-card mn-card-foot" style="grid-column:1/-1;border-radius:var(--mn-radius-lg)"><a class="mn-btn mn-btn-ghost" href="index.html">Cancel</a><button class="mn-btn mn-btn-primary"><svg class="mn-icon" aria-hidden="true"><use href="#i-check"/></svg>Save product</button></div>
+      </form>
+    </main>
+  </div>
+</div>
+<script src="../js/menara.js" defer></script>
+</body>
+</html>

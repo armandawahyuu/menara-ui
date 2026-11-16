@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analytics · Menara UI</title>
+<meta name="description" content="Menara UI — free HTML/CSS admin dashboard and storefront template.">
+<script data-mn-theme-init>try{var t=localStorage.getItem('mn-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/menara.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232451c7'/%3E%3Cpath d='M16 6v4M11 26l5-16 5 16M13 20h6' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="mn-skip" href="#main">Skip to content</a>
+<div class="mn-app">
+  <aside class="mn-sidebar" aria-label="Main navigation">
+    <a class="mn-brand" href="index.html"><span class="mn-brand-mark"><svg class="mn-icon" aria-hidden="true"><use href="#i-tower"/></svg></span><span><b>Menara</b><small>Admin</small></span></a>
+    <nav class="mn-nav">
+      <div class="mn-nav-label">Overview</div><a class="mn-nav-link" href="index.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-home"/></svg>Dashboard</a><a class="mn-nav-link" href="analytics.html" aria-current="page"><svg class="mn-icon" aria-hidden="true"><use href="#i-chart"/></svg>Analytics</a><a class="mn-nav-link" href="reports.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-receipt"/></svg>Reports</a><div class="mn-nav-label">Store</div><a class="mn-nav-link" href="table.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-table"/></svg>Orders<span class="mn-nav-count">12</span></a><a class="mn-nav-link" href="form.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-package"/></svg>Products</a><a class="mn-nav-link" href="import.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-upload"/></svg>Import</a><div class="mn-nav-label">Settings</div><a class="mn-nav-link" href="users.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-users"/></svg>Users</a><a class="mn-nav-link" href="settings.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-settings"/></svg>Settings</a>
+    </nav>
+    <div class="mn-sidebar-foot">
+      <a class="mn-nav-link" href="../index.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-layers"/></svg>All templates</a>
+      <a class="mn-nav-link" href="login.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-logout"/></svg>Sign out</a>
+    </div>
+  </aside>
+  <div class="mn-scrim"></div>
+  <div class="mn-main">
+    <header class="mn-topbar">
+      <button type="button" class="mn-btn mn-btn-outline mn-btn-icon mn-burger" data-mn-sidebar-toggle aria-label="Open menu" aria-expanded="false"><svg class="mn-icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+      <label class="mn-search" style="width:min(360px,100%)"><span class="mn-sr-only">Search</span><svg class="mn-icon" aria-hidden="true"><use href="#i-search"/></svg><input class="mn-input" type="search" placeholder="Search orders, products…"></label>
+      <div class="mn-topbar-actions">
+        <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" data-mn-theme-toggle aria-label="Switch to dark mode"><svg class="mn-icon" aria-hidden="true"><use href="#i-moon"/></svg></button>
+        <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" aria-label="Notifications"><svg class="mn-icon" aria-hidden="true"><use href="#i-bell"/></svg></button>
+        <details class="mn-dropdown">
+          <summary class="mn-btn mn-btn-ghost" aria-label="Account menu"><span class="mn-avatar">AR</span></summary>
+          <div class="mn-menu">
+            <a href="users.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-user"/></svg>Profile</a>
+            <a href="settings.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-settings"/></svg>Settings</a>
+            <hr>
+            <a href="login.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-logout"/></svg>Sign out</a>
+          </div>
+        </details>
+      </div>
+    </header>
+    <main class="mn-content" id="main">
+      <div class="mn-page-head">
+        <div><nav class="mn-crumbs" aria-label="Breadcrumb"><a href="index.html">Dashboard</a> / <span>Overview</span></nav><h1>Analytics</h1></div>
+        <div><div class="mn-segment" role="group" aria-label="Period"><a href="#">Today</a><a href="#" aria-current="page">30 days</a><a href="#">This month</a></div></div>
+      </div>
+
+      <div class="mn-grid mn-grid-4" style="margin-bottom:var(--mn-space-5)">
+        <div class="mn-card mn-kpi"><span class="mn-kpi-icon"><svg class="mn-icon" aria-hidden="true"><use href="#i-users"/></svg></span><div><span class="mn-kpi-label">Visitors</span><b class="mn-kpi-value">8,412</b><span class="mn-kpi-meta">unique per day</span></div></div>
+        <div class="mn-card mn-kpi"><span class="mn-kpi-icon"><svg class="mn-icon" aria-hidden="true"><use href="#i-eye"/></svg></span><div><span class="mn-kpi-label">Page views</span><b class="mn-kpi-value">21,980</b><span class="mn-kpi-meta">2.6 per visitor</span></div></div>
+        <div class="mn-card mn-kpi"><span class="mn-kpi-icon is-success"><svg class="mn-icon" aria-hidden="true"><use href="#i-cart"/></svg></span><div><span class="mn-kpi-label">Purchases</span><b class="mn-kpi-value">1,284</b><span class="mn-kpi-meta">this month</span></div></div>
+        <div class="mn-card mn-kpi"><span class="mn-kpi-icon is-warning"><svg class="mn-icon" aria-hidden="true"><use href="#i-trend"/></svg></span><div><span class="mn-kpi-label">Conversion</span><b class="mn-kpi-value">15.3%</b><span class="mn-kpi-meta">visitors who bought</span></div></div>
+      </div>
+      <div class="mn-grid mn-grid-main">
+        <div class="mn-stack">
+          <section class="mn-card"><div class="mn-card-head"><div><h2>Visitors per day</h2><p>Last 30 days</p></div></div>
+            <div class="mn-card-body"><div class="mn-bars mn-bars-dense" role="img" aria-label="Bar chart:  12,  18,  15,  22, 5 30,  26,  19,  24,  28, 10 35,  31,  27,  33,  41, 15 38,  29,  36,  44,  40, 20 47,  52,  49,  45,  58, 25 61,  55,  63,  70,  66, 30 72"><div class="mn-bar" style="--v:0.17" title=": 12"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.25" title=": 18"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.21" title=": 15"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.31" title=": 22"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.42" title="5: 30"><i></i><span class="mn-bar-label">5</span></div><div class="mn-bar" style="--v:0.36" title=": 26"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.26" title=": 19"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.33" title=": 24"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.39" title=": 28"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.49" title="10: 35"><i></i><span class="mn-bar-label">10</span></div><div class="mn-bar" style="--v:0.43" title=": 31"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.38" title=": 27"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.46" title=": 33"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.57" title=": 41"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.53" title="15: 38"><i></i><span class="mn-bar-label">15</span></div><div class="mn-bar" style="--v:0.40" title=": 29"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.50" title=": 36"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.61" title=": 44"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.56" title=": 40"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.65" title="20: 47"><i></i><span class="mn-bar-label">20</span></div><div class="mn-bar" style="--v:0.72" title=": 52"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.68" title=": 49"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.62" title=": 45"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.81" title=": 58"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.85" title="25: 61"><i></i><span class="mn-bar-label">25</span></div><div class="mn-bar" style="--v:0.76" title=": 55"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.88" title=": 63"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.97" title=": 70"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.92" title=": 66"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar is-current" style="--v:1.00" title="30: 72"><i></i><span class="mn-bar-label">30</span></div></div></div></section>
+          <section class="mn-card"><div class="mn-card-head"><div><h2>Busy hours</h2><p>Page views per hour · peak highlighted</p></div></div>
+            <div class="mn-card-body"><div class="mn-bars mn-bars-dense" role="img" aria-label="Bar chart: 00 2,  1,  1, 03 0,  0,  1, 06 3,  6,  9, 09 12,  14,  13, 12 15,  16,  14, 15 13,  15,  18, 18 22,  26,  31, 21 28,  17,  8"><div class="mn-bar" style="--v:0.06" title="00: 2"><i></i><span class="mn-bar-label">00</span></div><div class="mn-bar" style="--v:0.03" title=": 1"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.03" title=": 1"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.00" title="03: 0"><i></i><span class="mn-bar-label">03</span></div><div class="mn-bar" style="--v:0.00" title=": 0"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.03" title=": 1"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.10" title="06: 3"><i></i><span class="mn-bar-label">06</span></div><div class="mn-bar" style="--v:0.19" title=": 6"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.29" title=": 9"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.39" title="09: 12"><i></i><span class="mn-bar-label">09</span></div><div class="mn-bar" style="--v:0.45" title=": 14"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.42" title=": 13"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.48" title="12: 15"><i></i><span class="mn-bar-label">12</span></div><div class="mn-bar" style="--v:0.52" title=": 16"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.45" title=": 14"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.42" title="15: 13"><i></i><span class="mn-bar-label">15</span></div><div class="mn-bar" style="--v:0.48" title=": 15"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.58" title=": 18"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.71" title="18: 22"><i></i><span class="mn-bar-label">18</span></div><div class="mn-bar" style="--v:0.84" title=": 26"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar is-current" style="--v:1.00" title=": 31"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.90" title="21: 28"><i></i><span class="mn-bar-label">21</span></div><div class="mn-bar" style="--v:0.55" title=": 17"><i></i><span class="mn-bar-label"></span></div><div class="mn-bar" style="--v:0.26" title=": 8"><i></i><span class="mn-bar-label"></span></div></div></div></section>
+          <section class="mn-card"><div class="mn-card-head"><div><h2>Purchase funnel</h2><p>Where visitors drop off</p></div></div>
+            <div class="mn-card-body mn-funnel">
+              <div class="mn-funnel-row"><div><b>Visited store</b><span class="mn-num">8,412</span></div><div class="mn-meter" style="--v:1"><i></i></div></div>
+              <div class="mn-funnel-row"><div><b>Opened a product</b><span class="mn-num">4,630 · 55%</span></div><div class="mn-meter" style="--v:.55"><i></i></div><span class="mn-funnel-drop">45% left at this step</span></div>
+              <div class="mn-funnel-row"><div><b>Started checkout</b><span class="mn-num">1,902 · 23%</span></div><div class="mn-meter is-warning" style="--v:.23"><i></i></div><span class="mn-funnel-drop">59% left at this step</span></div>
+              <div class="mn-funnel-row"><div><b>Paid</b><span class="mn-num">1,284 · 15%</span></div><div class="mn-meter is-success" style="--v:.15"><i></i></div></div>
+            </div></section>
+        </div>
+        <div class="mn-stack">
+          <section class="mn-card"><div class="mn-card-head"><div><h2>Traffic sources</h2><p>Tag links with <code>?ref=</code></p></div></div>
+            <div class="mn-meter-row"><b>Social</b><span class="mn-num">46%</span><div class="mn-meter" style="--v:.46"><i></i></div></div>
+            <div class="mn-meter-row"><b>Direct</b><span class="mn-num">28%</span><div class="mn-meter" style="--v:.28"><i></i></div></div>
+            <div class="mn-meter-row"><b>Search</b><span class="mn-num">17%</span><div class="mn-meter" style="--v:.17"><i></i></div></div>
+            <div class="mn-meter-row"><b>Other sites</b><span class="mn-num">9%</span><div class="mn-meter" style="--v:.09"><i></i></div></div></section>
+          <section class="mn-card"><div class="mn-card-head"><div><h2>Devices</h2></div></div>
+            <div class="mn-meter-row"><b>Phone</b><span class="mn-num">81%</span><div class="mn-meter" style="--v:.81"><i></i></div></div>
+            <div class="mn-meter-row"><b>Desktop</b><span class="mn-num">16%</span><div class="mn-meter" style="--v:.16"><i></i></div></div>
+            <div class="mn-meter-row"><b>Tablet</b><span class="mn-num">3%</span><div class="mn-meter" style="--v:.03"><i></i></div></div></section>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="../js/menara.js" defer></script>
+</body>
+</html>

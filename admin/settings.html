@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Settings · Menara UI</title>
+<meta name="description" content="Menara UI — free HTML/CSS admin dashboard and storefront template.">
+<script data-mn-theme-init>try{var t=localStorage.getItem('mn-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/menara.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232451c7'/%3E%3Cpath d='M16 6v4M11 26l5-16 5 16M13 20h6' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="mn-skip" href="#main">Skip to content</a>
+<div class="mn-app">
+  <aside class="mn-sidebar" aria-label="Main navigation">
+    <a class="mn-brand" href="index.html"><span class="mn-brand-mark"><svg class="mn-icon" aria-hidden="true"><use href="#i-tower"/></svg></span><span><b>Menara</b><small>Admin</small></span></a>
+    <nav class="mn-nav">
+      <div class="mn-nav-label">Overview</div><a class="mn-nav-link" href="index.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-home"/></svg>Dashboard</a><a class="mn-nav-link" href="analytics.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-chart"/></svg>Analytics</a><a class="mn-nav-link" href="reports.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-receipt"/></svg>Reports</a><div class="mn-nav-label">Store</div><a class="mn-nav-link" href="table.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-table"/></svg>Orders<span class="mn-nav-count">12</span></a><a class="mn-nav-link" href="form.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-package"/></svg>Products</a><a class="mn-nav-link" href="import.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-upload"/></svg>Import</a><div class="mn-nav-label">Settings</div><a class="mn-nav-link" href="users.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-users"/></svg>Users</a><a class="mn-nav-link" href="settings.html" aria-current="page"><svg class="mn-icon" aria-hidden="true"><use href="#i-settings"/></svg>Settings</a>
+    </nav>
+    <div class="mn-sidebar-foot">
+      <a class="mn-nav-link" href="../index.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-layers"/></svg>All templates</a>
+      <a class="mn-nav-link" href="login.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-logout"/></svg>Sign out</a>
+    </div>
+  </aside>
+  <div class="mn-scrim"></div>
+  <div class="mn-main">
+    <header class="mn-topbar">
+      <button type="button" class="mn-btn mn-btn-outline mn-btn-icon mn-burger" data-mn-sidebar-toggle aria-label="Open menu" aria-expanded="false"><svg class="mn-icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+      <label class="mn-search" style="width:min(360px,100%)"><span class="mn-sr-only">Search</span><svg class="mn-icon" aria-hidden="true"><use href="#i-search"/></svg><input class="mn-input" type="search" placeholder="Search orders, products…"></label>
+      <div class="mn-topbar-actions">
+        <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" data-mn-theme-toggle aria-label="Switch to dark mode"><svg class="mn-icon" aria-hidden="true"><use href="#i-moon"/></svg></button>
+        <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" aria-label="Notifications"><svg class="mn-icon" aria-hidden="true"><use href="#i-bell"/></svg></button>
+        <details class="mn-dropdown">
+          <summary class="mn-btn mn-btn-ghost" aria-label="Account menu"><span class="mn-avatar">AR</span></summary>
+          <div class="mn-menu">
+            <a href="users.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-user"/></svg>Profile</a>
+            <a href="settings.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-settings"/></svg>Settings</a>
+            <hr>
+            <a href="login.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-logout"/></svg>Sign out</a>
+          </div>
+        </details>
+      </div>
+    </header>
+    <main class="mn-content" id="main">
+      <div class="mn-page-head">
+        <div><h1>Settings</h1></div>
+        
+      </div>
+
+      <section class="mn-card mn-tabs" data-mn-tabs>
+        <div role="tablist" aria-label="Settings sections">
+          <button type="button" role="tab" id="t-general" aria-controls="p-general" aria-selected="true"><svg class="mn-icon mn-icon-sm" aria-hidden="true"><use href="#i-settings"/></svg>General</button>
+          <button type="button" role="tab" id="t-pay" aria-controls="p-pay" aria-selected="false"><svg class="mn-icon mn-icon-sm" aria-hidden="true"><use href="#i-wallet"/></svg>Payments</button>
+          <button type="button" role="tab" id="t-notify" aria-controls="p-notify" aria-selected="false"><svg class="mn-icon mn-icon-sm" aria-hidden="true"><use href="#i-bell"/></svg>Notifications</button>
+        </div>
+        <div role="tabpanel" id="p-general" aria-labelledby="t-general" class="mn-card-body">
+          <div class="mn-form-grid">
+            <div class="mn-field"><label class="mn-label" for="sname">Store name</label><input class="mn-input" id="sname" value="Menara Store"></div>
+            <div class="mn-field"><label class="mn-label" for="cur">Currency</label><select class="mn-select" id="cur"><option>USD ($)</option><option>EUR (€)</option><option>IDR (Rp)</option></select></div>
+            <div class="mn-field"><label class="mn-label" for="mail">Support email</label><input class="mn-input" id="mail" type="email" value="support@example.com"></div>
+            <div class="mn-field"><label class="mn-label" for="tz">Time zone</label><select class="mn-select" id="tz"><option>UTC+07:00 Jakarta</option><option>UTC+00:00 London</option></select></div>
+          </div>
+          <label class="mn-switch"><input type="checkbox" checked> Show announcement banner in store</label>
+        </div>
+        <div role="tabpanel" id="p-pay" aria-labelledby="t-pay" class="mn-card-body" hidden>
+          <div class="mn-alert mn-alert-success" style="margin-bottom:var(--mn-space-4)"><svg class="mn-icon" aria-hidden="true"><use href="#i-check"/></svg><div><b>Connected</b>Test transaction created successfully.</div></div>
+          <div class="mn-field"><label class="mn-label" for="key">API key</label><input class="mn-input mn-mono" id="key" type="password" placeholder="Saved ••••4f2a · leave empty to keep"><p class="mn-help">Stored encrypted. Never shown again after saving.</p></div>
+          <label class="mn-switch"><input type="checkbox"> Sandbox mode</label>
+        </div>
+        <div role="tabpanel" id="p-notify" aria-labelledby="t-notify" class="mn-card-body" hidden>
+          <label class="mn-switch"><input type="checkbox" checked> Email me on every sale</label><br>
+          <label class="mn-switch"><input type="checkbox" checked> Low stock alerts</label><br>
+          <label class="mn-switch"><input type="checkbox"> Daily summary at 21:00</label>
+        </div>
+        <div class="mn-card-foot"><button type="button" class="mn-btn mn-btn-outline"><svg class="mn-icon" aria-hidden="true"><use href="#i-zap"/></svg>Send test</button><button type="button" class="mn-btn mn-btn-primary" onclick="Menara.toast('Settings saved (demo)')"><svg class="mn-icon" aria-hidden="true"><use href="#i-check"/></svg>Save</button></div>
+      </section>
+    </main>
+  </div>
+</div>
+<script src="../js/menara.js" defer></script>
+</body>
+</html>

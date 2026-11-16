@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orders · Menara UI</title>
+<meta name="description" content="Menara UI — free HTML/CSS admin dashboard and storefront template.">
+<script data-mn-theme-init>try{var t=localStorage.getItem('mn-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/menara.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232451c7'/%3E%3Cpath d='M16 6v4M11 26l5-16 5 16M13 20h6' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="mn-skip" href="#main">Skip to content</a>
+<div class="mn-app">
+  <aside class="mn-sidebar" aria-label="Main navigation">
+    <a class="mn-brand" href="index.html"><span class="mn-brand-mark"><svg class="mn-icon" aria-hidden="true"><use href="#i-tower"/></svg></span><span><b>Menara</b><small>Admin</small></span></a>
+    <nav class="mn-nav">
+      <div class="mn-nav-label">Overview</div><a class="mn-nav-link" href="index.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-home"/></svg>Dashboard</a><a class="mn-nav-link" href="analytics.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-chart"/></svg>Analytics</a><a class="mn-nav-link" href="reports.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-receipt"/></svg>Reports</a><div class="mn-nav-label">Store</div><a class="mn-nav-link" href="table.html" aria-current="page"><svg class="mn-icon" aria-hidden="true"><use href="#i-table"/></svg>Orders<span class="mn-nav-count">12</span></a><a class="mn-nav-link" href="form.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-package"/></svg>Products</a><a class="mn-nav-link" href="import.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-upload"/></svg>Import</a><div class="mn-nav-label">Settings</div><a class="mn-nav-link" href="users.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-users"/></svg>Users</a><a class="mn-nav-link" href="settings.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-settings"/></svg>Settings</a>
+    </nav>
+    <div class="mn-sidebar-foot">
+      <a class="mn-nav-link" href="../index.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-layers"/></svg>All templates</a>
+      <a class="mn-nav-link" href="login.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-logout"/></svg>Sign out</a>
+    </div>
+  </aside>
+  <div class="mn-scrim"></div>
+  <div class="mn-main">
+    <header class="mn-topbar">
+      <button type="button" class="mn-btn mn-btn-outline mn-btn-icon mn-burger" data-mn-sidebar-toggle aria-label="Open menu" aria-expanded="false"><svg class="mn-icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+      <label class="mn-search" style="width:min(360px,100%)"><span class="mn-sr-only">Search</span><svg class="mn-icon" aria-hidden="true"><use href="#i-search"/></svg><input class="mn-input" type="search" placeholder="Search orders, products…"></label>
+      <div class="mn-topbar-actions">
+        <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" data-mn-theme-toggle aria-label="Switch to dark mode"><svg class="mn-icon" aria-hidden="true"><use href="#i-moon"/></svg></button>
+        <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" aria-label="Notifications"><svg class="mn-icon" aria-hidden="true"><use href="#i-bell"/></svg></button>
+        <details class="mn-dropdown">
+          <summary class="mn-btn mn-btn-ghost" aria-label="Account menu"><span class="mn-avatar">AR</span></summary>
+          <div class="mn-menu">
+            <a href="users.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-user"/></svg>Profile</a>
+            <a href="settings.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-settings"/></svg>Settings</a>
+            <hr>
+            <a href="login.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-logout"/></svg>Sign out</a>
+          </div>
+        </details>
+      </div>
+    </header>
+    <main class="mn-content" id="main">
+      <div class="mn-page-head">
+        <div><nav class="mn-crumbs" aria-label="Breadcrumb"><a href="index.html">Dashboard</a> / <span>Store</span></nav><h1>Orders</h1></div>
+        <div><a class="mn-btn mn-btn-outline" href="reports.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-download"/></svg>CSV</a></div>
+      </div>
+
+      <section class="mn-card">
+        <div class="mn-toolbar">
+          <div class="mn-segment" role="group" aria-label="Filter by status">
+            <a href="#" aria-current="page">All</a><a href="#">Paid</a><a href="#">Pending</a><a href="#">Failed</a>
+          </div>
+          <label class="mn-search"><span class="mn-sr-only">Search orders</span><svg class="mn-icon" aria-hidden="true"><use href="#i-search"/></svg><input class="mn-input" type="search" placeholder="Order, customer, product"></label>
+        </div>
+        <div class="mn-bulkbar" data-mn-check-bar="ids" hidden><span><b data-mn-check-count="ids">0</b> selected</span><span class="mn-spacer"></span><button type="button" class="mn-btn mn-btn-danger mn-btn-sm" data-mn-modal-open="confirm-delete"><svg class="mn-icon" aria-hidden="true"><use href="#i-trash"/></svg>Delete selected</button></div>
+        <div class="mn-table-wrap"><table class="mn-table">
+      <thead><tr><th class="is-check"><input type="checkbox" class="mn-check" data-mn-check-all="ids" aria-label="Select all orders"></th><th>Order</th><th>Customer</th><th>Product</th><th class="is-right">Amount</th><th>Status</th><th class="is-right"><span class="mn-sr-only">Actions</span></th></tr></thead>
+      <tbody><tr><td class="is-check"><input type="checkbox" name="ids" value="MN-24081" aria-label="Select MN-24081"></td>
+          <td class="is-nowrap"><b class="mn-mono">MN-24081</b><span class="mn-cell-sub">2 min ago</span></td>
+          <td><span class="mn-cell-title">Maya Putri</span><span class="mn-cell-sub mn-truncate" style="max-width:28ch">maya@example.com</span></td>
+          <td><span class="mn-cell-title" title="Cloud Storage 100 GB">Cloud Storage 100 GB</span></td>
+          <td class="is-right is-nowrap mn-num"><b>$12.00</b></td>
+          <td><span class="mn-badge mn-badge-success">Paid</span></td>
+          <td class="is-right"><button type="button" class="mn-btn mn-btn-ghost mn-btn-sm mn-btn-icon" aria-label="Edit MN-24081"><svg class="mn-icon" aria-hidden="true"><use href="#i-edit"/></svg></button></td>
+        </tr><tr><td class="is-check"><input type="checkbox" name="ids" value="MN-24080" aria-label="Select MN-24080"></td>
+          <td class="is-nowrap"><b class="mn-mono">MN-24080</b><span class="mn-cell-sub">8 min ago</span></td>
+          <td><span class="mn-cell-title">Alexandria Montgomery-Washington</span><span class="mn-cell-sub mn-truncate" style="max-width:28ch">alexandria.montgomery-washington@example-company.com</span></td>
+          <td><span class="mn-cell-title" title="Design Asset Pack — Ultimate Bundle (icons, mockups, fonts, 3D scenes)">Design Asset Pack — Ultimate Bundle (icons, mockups, fonts, 3D scenes)</span></td>
+          <td class="is-right is-nowrap mn-num"><b>$149.00</b></td>
+          <td><span class="mn-badge mn-badge-warning">Pending</span></td>
+          <td class="is-right"><button type="button" class="mn-btn mn-btn-ghost mn-btn-sm mn-btn-icon" aria-label="Edit MN-24080"><svg class="mn-icon" aria-hidden="true"><use href="#i-edit"/></svg></button></td>
+        </tr><tr><td class="is-check"><input type="checkbox" name="ids" value="MN-24079" aria-label="Select MN-24079"></td>
+          <td class="is-nowrap"><b class="mn-mono">MN-24079</b><span class="mn-cell-sub">21 min ago</span></td>
+          <td><span class="mn-cell-title">Budi Santoso</span><span class="mn-cell-sub mn-truncate" style="max-width:28ch">budi@example.com</span></td>
+          <td><span class="mn-cell-title" title="Streaming Pass · 30 days">Streaming Pass · 30 days</span></td>
+          <td class="is-right is-nowrap mn-num"><b>$9.50</b></td>
+          <td><span class="mn-badge mn-badge-success">Paid</span></td>
+          <td class="is-right"><button type="button" class="mn-btn mn-btn-ghost mn-btn-sm mn-btn-icon" aria-label="Edit MN-24079"><svg class="mn-icon" aria-hidden="true"><use href="#i-edit"/></svg></button></td>
+        </tr><tr><td class="is-check"><input type="checkbox" name="ids" value="MN-24078" aria-label="Select MN-24078"></td>
+          <td class="is-nowrap"><b class="mn-mono">MN-24078</b><span class="mn-cell-sub">1 h ago</span></td>
+          <td><span class="mn-cell-title">Chen Wei</span><span class="mn-cell-sub mn-truncate" style="max-width:28ch">chen.wei@example.com</span></td>
+          <td><span class="mn-cell-title" title="E-book Bundle: Product Design">E-book Bundle: Product Design</span></td>
+          <td class="is-right is-nowrap mn-num"><b>$24.00</b></td>
+          <td><span class="mn-badge mn-badge-danger">Failed</span></td>
+          <td class="is-right"><button type="button" class="mn-btn mn-btn-ghost mn-btn-sm mn-btn-icon" aria-label="Edit MN-24078"><svg class="mn-icon" aria-hidden="true"><use href="#i-edit"/></svg></button></td>
+        </tr><tr><td class="is-check"><input type="checkbox" name="ids" value="MN-24077" aria-label="Select MN-24077"></td>
+          <td class="is-nowrap"><b class="mn-mono">MN-24077</b><span class="mn-cell-sub">2 h ago</span></td>
+          <td><span class="mn-cell-title">Sofia Rossi</span><span class="mn-cell-sub mn-truncate" style="max-width:28ch">sofia@example.com</span></td>
+          <td><span class="mn-cell-title" title="Domain .com · 1 year">Domain .com · 1 year</span></td>
+          <td class="is-right is-nowrap mn-num"><b>$11.99</b></td>
+          <td><span class="mn-badge mn-badge-neutral">Expired</span></td>
+          <td class="is-right"><button type="button" class="mn-btn mn-btn-ghost mn-btn-sm mn-btn-icon" aria-label="Edit MN-24077"><svg class="mn-icon" aria-hidden="true"><use href="#i-edit"/></svg></button></td>
+        </tr><tr><td class="is-check"><input type="checkbox" name="ids" value="MN-24076" aria-label="Select MN-24076"></td>
+          <td class="is-nowrap"><b class="mn-mono">MN-24076</b><span class="mn-cell-sub">Yesterday</span></td>
+          <td><span class="mn-cell-title">Northwind Holdings</span><span class="mn-cell-sub mn-truncate" style="max-width:28ch">billing@example.org</span></td>
+          <td><span class="mn-cell-title" title="Enterprise license · 500 seats">Enterprise license · 500 seats</span></td>
+          <td class="is-right is-nowrap mn-num"><b>$12,480,000.00</b></td>
+          <td><span class="mn-badge mn-badge-info">Invoice sent</span></td>
+          <td class="is-right"><button type="button" class="mn-btn mn-btn-ghost mn-btn-sm mn-btn-icon" aria-label="Edit MN-24076"><svg class="mn-icon" aria-hidden="true"><use href="#i-edit"/></svg></button></td>
+        </tr><tr><td class="is-check"><input type="checkbox" name="ids" value="MN-24075" aria-label="Select MN-24075"></td>
+          <td class="is-nowrap"><b class="mn-mono">MN-24075</b><span class="mn-cell-sub">Yesterday</span></td>
+          <td><span class="mn-cell-title">Liam O'Brien</span><span class="mn-cell-sub mn-truncate" style="max-width:28ch">liam@example.com</span></td>
+          <td><span class="mn-cell-title" title="Cloud Storage 1 TB">Cloud Storage 1 TB</span></td>
+          <td class="is-right is-nowrap mn-num"><b>$79.00</b></td>
+          <td><span class="mn-badge mn-badge-success">Paid</span></td>
+          <td class="is-right"><button type="button" class="mn-btn mn-btn-ghost mn-btn-sm mn-btn-icon" aria-label="Edit MN-24075"><svg class="mn-icon" aria-hidden="true"><use href="#i-edit"/></svg></button></td>
+        </tr><tr><td class="is-check"><input type="checkbox" name="ids" value="MN-24074" aria-label="Select MN-24074"></td>
+          <td class="is-nowrap"><b class="mn-mono">MN-24074</b><span class="mn-cell-sub">2 days ago</span></td>
+          <td><span class="mn-cell-title">Aisha Rahman</span><span class="mn-cell-sub mn-truncate" style="max-width:28ch">aisha@example.com</span></td>
+          <td><span class="mn-cell-title" title="Streaming Pass · 7 days">Streaming Pass · 7 days</span></td>
+          <td class="is-right is-nowrap mn-num"><b>$3.00</b></td>
+          <td><span class="mn-badge mn-badge-success">Paid</span></td>
+          <td class="is-right"><button type="button" class="mn-btn mn-btn-ghost mn-btn-sm mn-btn-icon" aria-label="Edit MN-24074"><svg class="mn-icon" aria-hidden="true"><use href="#i-edit"/></svg></button></td>
+        </tr></tbody></table></div>
+        <div class="mn-pagination"><span>Showing 1–8 of 1,284</span><nav aria-label="Pagination"><a href="#" aria-label="Previous page"><svg class="mn-icon mn-icon-sm" aria-hidden="true"><use href="#i-arrow-left"/></svg></a><span aria-current="page">1</span><a href="#">2</a><a href="#">3</a><a href="#" aria-label="Next page"><svg class="mn-icon mn-icon-sm" aria-hidden="true"><use href="#i-arrow-right"/></svg></a></nav></div>
+      </section>
+      <section class="mn-card" style="margin-top:var(--mn-space-5)">
+        <div class="mn-card-head"><div><h2>Empty state</h2><p>What a table shows when a filter has no results</p></div></div>
+        <div class="mn-empty"><svg class="mn-icon" aria-hidden="true"><use href="#i-search"/></svg><b>No refunds yet</b>Refunded orders will appear here.<br><a class="mn-btn mn-btn-outline" href="#">Clear filters</a></div>
+      </section>
+      <dialog class="mn-modal" id="confirm-delete" aria-labelledby="confirm-title">
+        <div class="mn-modal-body"><h2 id="confirm-title">Delete selected orders?</h2><p>This removes them from the list. This can’t be undone.</p></div>
+        <div class="mn-card-foot"><button type="button" class="mn-btn mn-btn-outline" data-mn-modal-close>Cancel</button><button type="button" class="mn-btn mn-btn-danger" data-mn-modal-close><svg class="mn-icon" aria-hidden="true"><use href="#i-trash"/></svg>Delete</button></div>
+      </dialog>
+    </main>
+  </div>
+</div>
+<script src="../js/menara.js" defer></script>
+</body>
+</html>

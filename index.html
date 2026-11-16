@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free HTML admin dashboard + storefront template · Menara UI</title>
+<meta name="description" content="Menara UI — free HTML/CSS admin dashboard and storefront template.">
+<script data-mn-theme-init>try{var t=localStorage.getItem('mn-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/menara.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232451c7'/%3E%3Cpath d='M16 6v4M11 26l5-16 5 16M13 20h6' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="mn-skip" href="#main">Skip to content</a>
+<header class="mn-shop-header">
+  <div class="mn-container">
+    <a class="mn-brand" href="index.html"><span class="mn-brand-mark"><svg class="mn-icon" aria-hidden="true"><use href="#i-tower"/></svg></span><span><b>Menara</b><small>UI kit v1.0.0</small></span></a>
+    <nav aria-label="Site"><a href="docs/index.html">Docs</a><a href="docs/components.html">Components</a><a href="https://github.com/armandawahyuu/menara-ui">GitHub</a></nav>
+    <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" data-mn-theme-toggle aria-label="Switch to dark mode"><svg class="mn-icon" aria-hidden="true"><use href="#i-moon"/></svg></button>
+  </div>
+</header>
+<main id="main" class="mn-container">
+  <section class="mn-hero">
+    <span class="mn-hero-chip"><svg class="mn-icon mn-icon-sm" aria-hidden="true"><use href="#i-zap"/></svg>No build step · MIT</span>
+    <h1>Menara UI</h1>
+    <p>A free admin dashboard and storefront template in plain HTML and CSS. Light and dark, rebrandable from one variable, and it ships with an AI skill so coding agents stay on-style.</p>
+    <div class="mn-row"><a class="mn-btn mn-btn-accent mn-btn-lg" href="docs/index.html">Get started <svg class="mn-icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a><a class="mn-btn mn-btn-outline mn-btn-lg" href="https://github.com/armandawahyuu/menara-ui"><svg class="mn-icon" aria-hidden="true"><use href="#i-github"/></svg>View on GitHub</a></div>
+    <div class="mn-hero-stats"><div><b>15</b>pages</div><div><b>0</b>dependencies</div><div><b>1</b>small script</div></div>
+  </section>
+
+  <section class="mn-card" style="margin-bottom:var(--mn-space-7)">
+    <div class="mn-card-head"><span class="mn-kpi-icon"><svg class="mn-icon" aria-hidden="true"><use href="#i-palette"/></svg></span><div><h2>Try your brand color</h2><p>Changes <code>--mn-primary</code> live. Open any template after to see it there too.</p></div></div>
+    <div class="mn-card-body mn-row" style="gap:var(--mn-space-4)">
+      <label class="mn-row"><input type="color" id="brand" value="#2451c7" aria-label="Primary color" style="width:52px;height:44px;border:1px solid var(--mn-line);border-radius:var(--mn-radius-sm);background:none;padding:2px"> <span class="mn-label" style="margin:0">Primary</span></label>
+      <div class="mn-row"><button type="button" class="mn-btn mn-btn-outline mn-btn-sm" data-color="#2451c7"><i style="width:14px;height:14px;border-radius:50%;background:#2451c7;display:inline-block"></i>Menara</button><button type="button" class="mn-btn mn-btn-outline mn-btn-sm" data-color="#0f766e"><i style="width:14px;height:14px;border-radius:50%;background:#0f766e;display:inline-block"></i>Teal</button><button type="button" class="mn-btn mn-btn-outline mn-btn-sm" data-color="#7c3aed"><i style="width:14px;height:14px;border-radius:50%;background:#7c3aed;display:inline-block"></i>Violet</button><button type="button" class="mn-btn mn-btn-outline mn-btn-sm" data-color="#be123c"><i style="width:14px;height:14px;border-radius:50%;background:#be123c;display:inline-block"></i>Rose</button><button type="button" class="mn-btn mn-btn-outline mn-btn-sm" data-color="#c2410c"><i style="width:14px;height:14px;border-radius:50%;background:#c2410c;display:inline-block"></i>Orange</button></div>
+      <button type="button" class="mn-btn mn-btn-ghost mn-btn-sm" id="brand-reset">Reset</button>
+      <span class="mn-spacer"></span>
+      <button type="button" class="mn-btn mn-btn-primary">Primary</button><span class="mn-badge mn-badge-primary">Badge</span><label class="mn-switch"><input type="checkbox" checked> Switch</label>
+    </div>
+  </section>
+
+  <section class="mn-section"><div class="mn-section-head"><h2>Admin</h2><p>Sidebar app shell, collapses to a drawer on phones.</p></div><div class="mn-gallery"><a href="admin/index.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-home"/></svg><b>Dashboard</b><span>KPIs, CSS bar chart, recent orders, stock meters</span></a><a href="admin/table.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-table"/></svg><b>Data table</b><span>Filters, select-all, bulk delete, pagination, empty state</span></a><a href="admin/form.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-form"/></svg><b>Form</b><span>Inputs, validation, switches, radio, file upload</span></a><a href="admin/import.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-upload"/></svg><b>Import</b><span>Paste-to-import with a preview table</span></a><a href="admin/reports.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-receipt"/></svg><b>Reports</b><span>Period switcher, profit summary, per-product table</span></a><a href="admin/analytics.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-chart"/></svg><b>Analytics</b><span>Funnel, daily and hourly charts, sources</span></a><a href="admin/settings.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-settings"/></svg><b>Settings</b><span>Accessible tabs with keyboard support</span></a><a href="admin/users.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-users"/></svg><b>Users</b><span>Team table and invite form</span></a><a href="admin/login.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-lock"/></svg><b>Sign in</b><span>Split-screen login</span></a><a href="admin/404.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-alert"/></svg><b>404</b><span>Friendly not-found page</span></a></div></section>
+  <section class="mn-section"><div class="mn-section-head"><h2>Storefront &amp; landing</h2><p>Mobile-first shop with a bottom nav on phones.</p></div><div class="mn-gallery"><a href="store/index.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-home"/></svg><b>Storefront</b><span>Hero, trust strip, products, ticker, compare, FAQ</span></a><a href="store/product.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-tag"/></svg><b>Product + checkout</b><span>Details with order summary</span></a><a href="store/pay.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-qr"/></svg><b>Waiting for payment</b><span>QR, live countdown, status</span></a><a href="store/success.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-check"/></svg><b>Success</b><span>Code reveal with copy button</span></a><a href="store/lookup.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-search"/></svg><b>Order lookup</b><span>Find an order again</span></a></div></section>
+  <section class="mn-section"><div class="mn-section-head"><h2>Docs</h2></div><div class="mn-gallery">
+    <a href="docs/index.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-book"/></svg><b>Getting started</b><span>Install in two minutes</span></a>
+    <a href="docs/theming.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-palette"/></svg><b>Theming</b><span>Tokens, dark mode, rebranding</span></a>
+    <a href="docs/components.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-layers"/></svg><b>Components</b><span>Live examples with copyable code</span></a>
+    <a href="docs/layout.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-table"/></svg><b>Layout</b><span>App shell, grids, breakpoints</span></a>
+    <a href="docs/accessibility.html"><svg class="mn-icon mn-icon-lg" aria-hidden="true"><use href="#i-eye"/></svg><b>Accessibility</b><span>What’s built in and what’s on you</span></a>
+  </div></section>
+</main>
+<footer class="mn-footer"><div class="mn-container"><span>Menara UI v1.0.0 · MIT License</span><span>Font: Rubik (OFL) · Icons: Lucide-style (ISC)</span></div></footer>
+<script>
+(function () {
+  var root = document.documentElement, input = document.getElementById('brand');
+  var VARS = ['--mn-primary', '--mn-primary-hover', '--mn-primary-text', '--mn-brand-surface', '--mn-primary-soft'];
+  function apply(c) {
+    VARS.slice(0, 4).forEach(function (v) { root.style.setProperty(v, c); });
+    root.style.setProperty('--mn-primary-soft', 'color-mix(in srgb, ' + c + ' 14%, var(--mn-surface))');
+    input.value = c;
+    try { localStorage.setItem('mn-brand', c); } catch (e) {}
+  }
+  input.addEventListener('input', function () { apply(input.value); });
+  document.querySelectorAll('[data-color]').forEach(function (b) { b.addEventListener('click', function () { apply(b.getAttribute('data-color')); }); });
+  document.getElementById('brand-reset').addEventListener('click', function () {
+    VARS.forEach(function (v) { root.style.removeProperty(v); });
+    input.value = '#2451c7'; try { localStorage.removeItem('mn-brand'); } catch (e) {}
+  });
+  try { var saved = localStorage.getItem('mn-brand'); if (saved) apply(saved); } catch (e) {}
+})();
+</script>
+<script src="js/menara.js" defer></script>
+</body>
+</html>

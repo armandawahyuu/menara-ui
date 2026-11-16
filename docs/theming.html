@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Theming · Menara UI</title>
+<meta name="description" content="Menara UI — free HTML/CSS admin dashboard and storefront template.">
+<script data-mn-theme-init>try{var t=localStorage.getItem('mn-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/menara.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232451c7'/%3E%3Cpath d='M16 6v4M11 26l5-16 5 16M13 20h6' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="mn-skip" href="#main">Skip to content</a>
+<header class="mn-shop-header">
+  <div class="mn-container">
+    <a class="mn-brand" href="../index.html"><span class="mn-brand-mark"><svg class="mn-icon" aria-hidden="true"><use href="#i-tower"/></svg></span><span><b>Menara</b><small>Docs</small></span></a>
+    <nav aria-label="Site"><a href="../index.html">Templates</a><a href="index.html">Docs</a><a href="https://github.com/armandawahyuu/menara-ui">GitHub</a></nav>
+    <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" data-mn-theme-toggle aria-label="Switch to dark mode"><svg class="mn-icon" aria-hidden="true"><use href="#i-moon"/></svg></button>
+  </div>
+</header>
+<div class="mn-container mn-doc">
+  <nav class="mn-doc-nav" aria-label="Documentation"><a href="index.html">Getting started</a><a href="theming.html" aria-current="page">Theming</a><a href="components.html">Components</a><a href="layout.html">Layout</a><a href="accessibility.html">Accessibility</a></nav>
+  <main id="main" class="mn-prose">
+
+<h1>Theming</h1>
+<p>Every color, size and shadow is a CSS custom property in <code>css/tokens.css</code>. Components never use raw colors, so changing a token changes the whole UI.</p>
+<h2>Rebrand in a few lines</h2>
+<p>Override the brand tokens after <code>tokens.css</code>:</p>
+<div class="mn-snippet"><pre><code>:root {
+  --mn-primary: #0f766e;        /* buttons, links, focus, active nav, charts */
+  --mn-primary-hover: #0b5f59;
+  --mn-primary-soft: #e6f4f2;   /* tinted backgrounds */
+  --mn-primary-text: #0f766e;   /* primary used as text on light surfaces */
+  --mn-accent: #ffc83d;         /* highlights, current bar, badges */
+}
+:root[data-theme=&quot;dark&quot;] {
+  --mn-primary: #2dd4bf;
+  --mn-primary-text: #5eead4;
+  --mn-brand-surface: #134e4a;  /* store header + hero in dark mode */
+}</code></pre><button type="button" class="mn-btn mn-btn-outline mn-btn-sm" data-mn-copy=":root {
+  --mn-primary: #0f766e;        /* buttons, links, focus, active nav, charts */
+  --mn-primary-hover: #0b5f59;
+  --mn-primary-soft: #e6f4f2;   /* tinted backgrounds */
+  --mn-primary-text: #0f766e;   /* primary used as text on light surfaces */
+  --mn-accent: #ffc83d;         /* highlights, current bar, badges */
+}
+:root[data-theme=&quot;dark&quot;] {
+  --mn-primary: #2dd4bf;
+  --mn-primary-text: #5eead4;
+  --mn-brand-surface: #134e4a;  /* store header + hero in dark mode */
+}"><span data-mn-copy-label>Copy</span></button></div>
+<p>Dark values also live under <code>@media (prefers-color-scheme: dark)</code> in <code>tokens.css</code>. Change both blocks, or delete the media block if you only want an explicit toggle. Try colors live on the <a href="../index.html">gallery page</a>, and check contrast: text on <code>--mn-primary</code> uses <code>--mn-primary-ink</code>.</p>
+<h2>Palette</h2>
+<div class="mn-swatches"><div class="mn-swatch"><i style="background:var(--mn-primary)"></i><div><b>Primary</b><code>--mn-primary</code></div></div><div class="mn-swatch"><i style="background:var(--mn-accent)"></i><div><b>Accent</b><code>--mn-accent</code></div></div><div class="mn-swatch"><i style="background:var(--mn-navy)"></i><div><b>Navy</b><code>--mn-navy</code></div></div><div class="mn-swatch"><i style="background:var(--mn-ink)"></i><div><b>Ink</b><code>--mn-ink</code></div></div><div class="mn-swatch"><i style="background:var(--mn-muted)"></i><div><b>Muted</b><code>--mn-muted</code></div></div><div class="mn-swatch"><i style="background:var(--mn-line)"></i><div><b>Line</b><code>--mn-line</code></div></div><div class="mn-swatch"><i style="background:var(--mn-surface)"></i><div><b>Surface</b><code>--mn-surface</code></div></div><div class="mn-swatch"><i style="background:var(--mn-bg)"></i><div><b>Background</b><code>--mn-bg</code></div></div><div class="mn-swatch"><i style="background:var(--mn-success)"></i><div><b>Success</b><code>--mn-success</code></div></div><div class="mn-swatch"><i style="background:var(--mn-warning)"></i><div><b>Warning</b><code>--mn-warning</code></div></div><div class="mn-swatch"><i style="background:var(--mn-danger)"></i><div><b>Danger</b><code>--mn-danger</code></div></div><div class="mn-swatch"><i style="background:var(--mn-info)"></i><div><b>Info</b><code>--mn-info</code></div></div></div>
+<h2>Dark mode</h2>
+<p>Dark mode follows the operating system by default. A <code>data-mn-theme-toggle</code> button switches it and remembers the choice in <code>localStorage</code> (key <code>mn-theme</code>). To force a theme, set the attribute yourself:</p>
+<div class="mn-snippet"><pre><code>&lt;html lang=&quot;en&quot; data-theme=&quot;dark&quot;&gt;</code></pre><button type="button" class="mn-btn mn-btn-outline mn-btn-sm" data-mn-copy="&lt;html lang=&quot;en&quot; data-theme=&quot;dark&quot;&gt;"><span data-mn-copy-label>Copy</span></button></div>
+<p>Keep the small <code>data-mn-theme-init</code> script in <code>&lt;head&gt;</code>. It applies the saved theme before the first paint, so dark-mode users never see a white flash.</p>
+<h2>Typography</h2>
+<p>Rubik from Google Fonts, falling back to the system font. Sizes run from <code>--mn-text-xs</code> (12px, the minimum) to <code>--mn-text-3xl</code> (40px). Body text is neutral ink, not brand blue. Use <code>.mn-num</code> for tabular numbers in tables and KPIs.</p>
+<h2>Spacing, radius, shadows</h2>
+<p>A 4px grid: <code>--mn-space-1</code> (4px) to <code>--mn-space-8</code> (48px). Radius <code>--mn-radius-sm|md|lg|pill</code>. Shadows <code>--mn-shadow-sm|md|lg</code>.</p>
+  </main>
+</div>
+<script src="../js/menara.js" defer></script>
+</body>
+</html>

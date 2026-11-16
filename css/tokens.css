@@ -1,0 +1,186 @@
+/*!
+ * Menara UI — design tokens
+ * Every color, size and shadow lives here. Rebrand by changing --mn-primary (and friends).
+ * MIT License · https://github.com/armandawahyuu/menara-ui
+ */
+:root {
+  color-scheme: light;
+
+  /* Brand */
+  --mn-primary: #2451c7;
+  --mn-primary-hover: #1d43a8;
+  --mn-primary-ink: #ffffff;          /* text on primary */
+  --mn-primary-soft: #e8eefc;         /* tinted backgrounds */
+  --mn-primary-text: #1f47b3;         /* primary as text on light surfaces */
+  --mn-accent: #ffc83d;
+  --mn-accent-ink: #13205a;
+  --mn-navy: #13205a;
+
+  /* Neutrals */
+  --mn-bg: #f4f6fb;
+  --mn-surface: #ffffff;
+  --mn-surface-2: #f1f4fa;
+  --mn-line: #e2e7f0;
+  --mn-line-strong: #cdd5e3;
+  --mn-ink: #18213a;                  /* body text: neutral, not blue */
+  --mn-muted: #5b6478;
+  --mn-subtle: #737c90;
+  --mn-overlay: rgba(10, 15, 35, 0.48);
+
+  /* Sidebar (dark in both themes) */
+  --mn-sidebar-bg: #0f1730;
+  --mn-sidebar-ink: #cfd6e6;
+  --mn-sidebar-muted: #7d88a3;
+  --mn-sidebar-strong: #ffffff;
+  --mn-sidebar-hover: rgba(255, 255, 255, 0.07);
+  --mn-sidebar-active: rgba(91, 130, 240, 0.28);
+  --mn-sidebar-line: rgba(255, 255, 255, 0.07);
+
+  /* Strong brand areas (store header, hero): stay deep in dark mode */
+  --mn-brand-surface: var(--mn-primary);
+  --mn-brand-surface-ink: #ffffff;
+
+  /* Topbar glass */
+  --mn-topbar-bg: rgba(244, 246, 251, 0.86);
+
+  /* Fixed whites/blacks used on colored surfaces */
+  --mn-white: #ffffff;
+  --mn-on-dark-muted: rgba(255, 255, 255, 0.78);
+
+  /* Status */
+  --mn-success: #137a3a;
+  --mn-success-soft: #e6f6ec;
+  --mn-warning: #b45309;
+  --mn-warning-soft: #fdf2e1;
+  --mn-danger: #c81e3a;
+  --mn-danger-soft: #fdecef;
+  --mn-info: #0e6fa8;
+  --mn-info-soft: #e5f3fb;
+
+  /* Chart series (categorical) */
+  --mn-series-1: var(--mn-primary);
+  --mn-series-2: #3b6cf0;
+  --mn-series-3: #d97706;
+  --mn-series-4: #15803d;
+  --mn-series-5: #7c3aed;
+
+  /* Type */
+  --mn-font: "Rubik", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mn-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --mn-text-xs: 12px;
+  --mn-text-sm: 13.5px;
+  --mn-text-md: 15px;
+  --mn-text-lg: 17px;
+  --mn-text-xl: 21px;
+  --mn-text-2xl: 28px;
+  --mn-text-3xl: 40px;
+  --mn-leading: 1.55;
+
+  /* Space (4px grid) */
+  --mn-space-1: 4px;
+  --mn-space-2: 8px;
+  --mn-space-3: 12px;
+  --mn-space-4: 16px;
+  --mn-space-5: 20px;
+  --mn-space-6: 24px;
+  --mn-space-7: 32px;
+  --mn-space-8: 48px;
+
+  /* Shape & depth */
+  --mn-radius-sm: 8px;
+  --mn-radius-md: 12px;
+  --mn-radius-lg: 18px;
+  --mn-radius-pill: 999px;
+  --mn-shadow-sm: 0 1px 2px rgba(16, 24, 48, 0.06);
+  --mn-shadow-md: 0 6px 20px rgba(16, 24, 48, 0.08);
+  --mn-shadow-lg: 0 18px 48px rgba(16, 24, 48, 0.16);
+  --mn-focus: 0 0 0 3px color-mix(in srgb, var(--mn-primary) 35%, transparent);
+
+  /* Motion */
+  --mn-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --mn-fast: 150ms;
+  --mn-normal: 220ms;
+
+  /* Layout */
+  --mn-sidebar-w: 256px;
+  --mn-topbar-h: 64px;
+  --mn-content-max: 1240px;
+}
+
+/* Dark theme: explicit choice … */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --mn-primary: #5b82f0;
+  --mn-primary-hover: #7395f4;
+  --mn-primary-ink: #0b1020;
+  --mn-primary-soft: #1a2647;
+  --mn-primary-text: #8aa6f6;
+  --mn-accent-ink: #13205a;
+  --mn-bg: #0b1020;
+  --mn-surface: #121a2e;
+  --mn-surface-2: #18223a;
+  --mn-line: #24304b;
+  --mn-line-strong: #33415f;
+  --mn-ink: #e6eaf5;
+  --mn-muted: #a3adc2;
+  --mn-subtle: #7d88a0;
+  --mn-overlay: rgba(0, 0, 0, 0.6);
+  --mn-success: #4ade80;
+  --mn-success-soft: #12301f;
+  --mn-warning: #fbbf24;
+  --mn-warning-soft: #33270d;
+  --mn-danger: #fb7185;
+  --mn-danger-soft: #3a1520;
+  --mn-info: #38bdf8;
+  --mn-info-soft: #0f2a3a;
+  --mn-series-2: #7c9cf6;
+  --mn-series-3: #f59e0b;
+  --mn-series-4: #4ade80;
+  --mn-series-5: #a78bfa;
+  --mn-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --mn-shadow-md: 0 6px 20px rgba(0, 0, 0, 0.35);
+  --mn-shadow-lg: 0 18px 48px rgba(0, 0, 0, 0.5);
+  --mn-sidebar-bg: #080d1c;
+  --mn-topbar-bg: rgba(11, 16, 32, 0.86);
+  --mn-brand-surface: #1c3488;
+}
+
+/* … or follow the OS when no choice was made. Keep in sync with the block above. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --mn-primary: #5b82f0;
+    --mn-primary-hover: #7395f4;
+    --mn-primary-ink: #0b1020;
+    --mn-primary-soft: #1a2647;
+    --mn-primary-text: #8aa6f6;
+    --mn-accent-ink: #13205a;
+    --mn-bg: #0b1020;
+    --mn-surface: #121a2e;
+    --mn-surface-2: #18223a;
+    --mn-line: #24304b;
+    --mn-line-strong: #33415f;
+    --mn-ink: #e6eaf5;
+    --mn-muted: #a3adc2;
+    --mn-subtle: #7d88a0;
+    --mn-overlay: rgba(0, 0, 0, 0.6);
+    --mn-success: #4ade80;
+    --mn-success-soft: #12301f;
+    --mn-warning: #fbbf24;
+    --mn-warning-soft: #33270d;
+    --mn-danger: #fb7185;
+    --mn-danger-soft: #3a1520;
+    --mn-info: #38bdf8;
+    --mn-info-soft: #0f2a3a;
+    --mn-series-2: #7c9cf6;
+    --mn-series-3: #f59e0b;
+    --mn-series-4: #4ade80;
+    --mn-series-5: #a78bfa;
+    --mn-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --mn-shadow-md: 0 6px 20px rgba(0, 0, 0, 0.35);
+    --mn-shadow-lg: 0 18px 48px rgba(0, 0, 0, 0.5);
+    --mn-sidebar-bg: #080d1c;
+    --mn-topbar-bg: rgba(11, 16, 32, 0.86);
+    --mn-brand-surface: #1c3488;
+  }
+}

@@ -1,0 +1,5 @@
+.superpowers/
+tools/out/
+.DS_Store
+docs/superpowers/
+tools/forbidden.local.txt

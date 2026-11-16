@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reports · Menara UI</title>
+<meta name="description" content="Menara UI — free HTML/CSS admin dashboard and storefront template.">
+<script data-mn-theme-init>try{var t=localStorage.getItem('mn-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/menara.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232451c7'/%3E%3Cpath d='M16 6v4M11 26l5-16 5 16M13 20h6' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="mn-skip" href="#main">Skip to content</a>
+<div class="mn-app">
+  <aside class="mn-sidebar" aria-label="Main navigation">
+    <a class="mn-brand" href="index.html"><span class="mn-brand-mark"><svg class="mn-icon" aria-hidden="true"><use href="#i-tower"/></svg></span><span><b>Menara</b><small>Admin</small></span></a>
+    <nav class="mn-nav">
+      <div class="mn-nav-label">Overview</div><a class="mn-nav-link" href="index.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-home"/></svg>Dashboard</a><a class="mn-nav-link" href="analytics.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-chart"/></svg>Analytics</a><a class="mn-nav-link" href="reports.html" aria-current="page"><svg class="mn-icon" aria-hidden="true"><use href="#i-receipt"/></svg>Reports</a><div class="mn-nav-label">Store</div><a class="mn-nav-link" href="table.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-table"/></svg>Orders<span class="mn-nav-count">12</span></a><a class="mn-nav-link" href="form.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-package"/></svg>Products</a><a class="mn-nav-link" href="import.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-upload"/></svg>Import</a><div class="mn-nav-label">Settings</div><a class="mn-nav-link" href="users.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-users"/></svg>Users</a><a class="mn-nav-link" href="settings.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-settings"/></svg>Settings</a>
+    </nav>
+    <div class="mn-sidebar-foot">
+      <a class="mn-nav-link" href="../index.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-layers"/></svg>All templates</a>
+      <a class="mn-nav-link" href="login.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-logout"/></svg>Sign out</a>
+    </div>
+  </aside>
+  <div class="mn-scrim"></div>
+  <div class="mn-main">
+    <header class="mn-topbar">
+      <button type="button" class="mn-btn mn-btn-outline mn-btn-icon mn-burger" data-mn-sidebar-toggle aria-label="Open menu" aria-expanded="false"><svg class="mn-icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+      <label class="mn-search" style="width:min(360px,100%)"><span class="mn-sr-only">Search</span><svg class="mn-icon" aria-hidden="true"><use href="#i-search"/></svg><input class="mn-input" type="search" placeholder="Search orders, products…"></label>
+      <div class="mn-topbar-actions">
+        <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" data-mn-theme-toggle aria-label="Switch to dark mode"><svg class="mn-icon" aria-hidden="true"><use href="#i-moon"/></svg></button>
+        <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" aria-label="Notifications"><svg class="mn-icon" aria-hidden="true"><use href="#i-bell"/></svg></button>
+        <details class="mn-dropdown">
+          <summary class="mn-btn mn-btn-ghost" aria-label="Account menu"><span class="mn-avatar">AR</span></summary>
+          <div class="mn-menu">
+            <a href="users.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-user"/></svg>Profile</a>
+            <a href="settings.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-settings"/></svg>Settings</a>
+            <hr>
+            <a href="login.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-logout"/></svg>Sign out</a>
+          </div>
+        </details>
+      </div>
+    </header>
+    <main class="mn-content" id="main">
+      <div class="mn-page-head">
+        <div><nav class="mn-crumbs" aria-label="Breadcrumb"><a href="index.html">Dashboard</a> / <span>Overview</span></nav><h1>Reports</h1></div>
+        
+      </div>
+
+      <section class="mn-card" style="margin-bottom:var(--mn-space-5)"><div class="mn-toolbar" style="border:0">
+        <div class="mn-segment" role="group" aria-label="Period"><a href="#">Today</a><a href="#">7 days</a><a href="#" aria-current="page">This month</a><a href="#">Last month</a></div>
+        <span class="mn-spacer"></span><a class="mn-btn mn-btn-outline" href="#"><svg class="mn-icon" aria-hidden="true"><use href="#i-download"/></svg>Export CSV</a></div></section>
+      <div class="mn-grid mn-grid-4" style="margin-bottom:var(--mn-space-5)">
+        <div class="mn-card mn-kpi"><span class="mn-kpi-icon"><svg class="mn-icon" aria-hidden="true"><use href="#i-wallet"/></svg></span><div><span class="mn-kpi-label">Gross sales</span><b class="mn-kpi-value">$61,040</b><span class="mn-kpi-meta">1,284 orders</span></div></div>
+        <div class="mn-card mn-kpi"><span class="mn-kpi-icon is-warning"><svg class="mn-icon" aria-hidden="true"><use href="#i-tag"/></svg></span><div><span class="mn-kpi-label">Cost of goods</span><b class="mn-kpi-value">$42,120</b><span class="mn-kpi-meta">69% of sales</span></div></div>
+        <div class="mn-card mn-kpi"><span class="mn-kpi-icon is-success"><svg class="mn-icon" aria-hidden="true"><use href="#i-trend"/></svg></span><div><span class="mn-kpi-label">Net profit</span><b class="mn-kpi-value">$18,920</b><span class="mn-kpi-meta">Avg $14.74 / order</span></div></div>
+        <div class="mn-card mn-kpi"><span class="mn-kpi-icon is-danger"><svg class="mn-icon" aria-hidden="true"><use href="#i-receipt"/></svg></span><div><span class="mn-kpi-label">Refunds</span><b class="mn-kpi-value">$212</b><span class="mn-kpi-meta">6 orders</span></div></div>
+      </div>
+      <section class="mn-card">
+        <div class="mn-card-head"><div><h2>By product</h2><p>This month</p></div></div>
+        <div class="mn-table-wrap"><table class="mn-table">
+          <thead><tr><th>Product</th><th class="is-right">Sold</th><th class="is-right">Sales</th><th class="is-right">Profit</th><th class="is-right">Margin</th></tr></thead>
+          <tbody>
+            <tr><td>Cloud Storage 100 GB</td><td class="is-right mn-num">412</td><td class="is-right mn-num">$4,944</td><td class="is-right mn-num mn-up">$1,854</td><td class="is-right mn-num">37%</td></tr>
+            <tr><td>Streaming Pass · 30 days</td><td class="is-right mn-num">288</td><td class="is-right mn-num">$2,736</td><td class="is-right mn-num mn-up">$864</td><td class="is-right mn-num">32%</td></tr>
+            <tr><td>Enterprise license · 500 seats</td><td class="is-right mn-num">1</td><td class="is-right mn-num">$12,480,000</td><td class="is-right mn-num mn-up">$3,744,000</td><td class="is-right mn-num">30%</td></tr>
+            <tr><td>Domain .com · 1 year</td><td class="is-right mn-num">96</td><td class="is-right mn-num">$1,151</td><td class="is-right mn-num mn-down">−$12</td><td class="is-right mn-num">−1%</td></tr>
+          </tbody></table></div>
+      </section>
+    </main>
+  </div>
+</div>
+<script src="../js/menara.js" defer></script>
+</body>
+</html>

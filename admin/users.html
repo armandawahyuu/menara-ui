@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Users · Menara UI</title>
+<meta name="description" content="Menara UI — free HTML/CSS admin dashboard and storefront template.">
+<script data-mn-theme-init>try{var t=localStorage.getItem('mn-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/menara.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232451c7'/%3E%3Cpath d='M16 6v4M11 26l5-16 5 16M13 20h6' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="mn-skip" href="#main">Skip to content</a>
+<div class="mn-app">
+  <aside class="mn-sidebar" aria-label="Main navigation">
+    <a class="mn-brand" href="index.html"><span class="mn-brand-mark"><svg class="mn-icon" aria-hidden="true"><use href="#i-tower"/></svg></span><span><b>Menara</b><small>Admin</small></span></a>
+    <nav class="mn-nav">
+      <div class="mn-nav-label">Overview</div><a class="mn-nav-link" href="index.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-home"/></svg>Dashboard</a><a class="mn-nav-link" href="analytics.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-chart"/></svg>Analytics</a><a class="mn-nav-link" href="reports.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-receipt"/></svg>Reports</a><div class="mn-nav-label">Store</div><a class="mn-nav-link" href="table.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-table"/></svg>Orders<span class="mn-nav-count">12</span></a><a class="mn-nav-link" href="form.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-package"/></svg>Products</a><a class="mn-nav-link" href="import.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-upload"/></svg>Import</a><div class="mn-nav-label">Settings</div><a class="mn-nav-link" href="users.html" aria-current="page"><svg class="mn-icon" aria-hidden="true"><use href="#i-users"/></svg>Users</a><a class="mn-nav-link" href="settings.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-settings"/></svg>Settings</a>
+    </nav>
+    <div class="mn-sidebar-foot">
+      <a class="mn-nav-link" href="../index.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-layers"/></svg>All templates</a>
+      <a class="mn-nav-link" href="login.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-logout"/></svg>Sign out</a>
+    </div>
+  </aside>
+  <div class="mn-scrim"></div>
+  <div class="mn-main">
+    <header class="mn-topbar">
+      <button type="button" class="mn-btn mn-btn-outline mn-btn-icon mn-burger" data-mn-sidebar-toggle aria-label="Open menu" aria-expanded="false"><svg class="mn-icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+      <label class="mn-search" style="width:min(360px,100%)"><span class="mn-sr-only">Search</span><svg class="mn-icon" aria-hidden="true"><use href="#i-search"/></svg><input class="mn-input" type="search" placeholder="Search orders, products…"></label>
+      <div class="mn-topbar-actions">
+        <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" data-mn-theme-toggle aria-label="Switch to dark mode"><svg class="mn-icon" aria-hidden="true"><use href="#i-moon"/></svg></button>
+        <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" aria-label="Notifications"><svg class="mn-icon" aria-hidden="true"><use href="#i-bell"/></svg></button>
+        <details class="mn-dropdown">
+          <summary class="mn-btn mn-btn-ghost" aria-label="Account menu"><span class="mn-avatar">AR</span></summary>
+          <div class="mn-menu">
+            <a href="users.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-user"/></svg>Profile</a>
+            <a href="settings.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-settings"/></svg>Settings</a>
+            <hr>
+            <a href="login.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-logout"/></svg>Sign out</a>
+          </div>
+        </details>
+      </div>
+    </header>
+    <main class="mn-content" id="main">
+      <div class="mn-page-head">
+        <div><nav class="mn-crumbs" aria-label="Breadcrumb"><a href="index.html">Dashboard</a> / <span>Settings</span></nav><h1>Users</h1></div>
+        
+      </div>
+
+      <div class="mn-grid mn-grid-main">
+        <section class="mn-card"><div class="mn-card-head"><div><h2>Team</h2><p>People who can sign in to this dashboard</p></div></div>
+          <div class="mn-table-wrap"><table class="mn-table"><thead><tr><th>Name</th><th>Role</th><th>Last seen</th><th class="is-right"><span class="mn-sr-only">Actions</span></th></tr></thead><tbody><tr><td><div class="mn-row" style="flex-wrap:nowrap"><span class="mn-avatar">AR</span><div style="min-width:0"><span class="mn-cell-title">Ari Rahman</span><span class="mn-cell-sub">ari@example.com</span></div></div></td>
+      <td><span class="mn-badge mn-badge-primary">Owner</span></td><td class="mn-muted is-nowrap">Active now</td>
+      <td class="is-right"><button type="button" class="mn-btn mn-btn-ghost mn-btn-sm mn-btn-icon" aria-label="Edit Ari Rahman"><svg class="mn-icon" aria-hidden="true"><use href="#i-edit"/></svg></button></td></tr><tr><td><div class="mn-row" style="flex-wrap:nowrap"><span class="mn-avatar">NK</span><div style="min-width:0"><span class="mn-cell-title">Nadia Kusuma</span><span class="mn-cell-sub">nadia@example.com</span></div></div></td>
+      <td><span class="mn-badge mn-badge-info">Admin</span></td><td class="mn-muted is-nowrap">2 h ago</td>
+      <td class="is-right"><button type="button" class="mn-btn mn-btn-ghost mn-btn-sm mn-btn-icon" aria-label="Edit Nadia Kusuma"><svg class="mn-icon" aria-hidden="true"><use href="#i-edit"/></svg></button></td></tr><tr><td><div class="mn-row" style="flex-wrap:nowrap"><span class="mn-avatar">JM</span><div style="min-width:0"><span class="mn-cell-title">Jonas Müller</span><span class="mn-cell-sub">jonas@example.com</span></div></div></td>
+      <td><span class="mn-badge mn-badge-neutral">Support</span></td><td class="mn-muted is-nowrap">Yesterday</td>
+      <td class="is-right"><button type="button" class="mn-btn mn-btn-ghost mn-btn-sm mn-btn-icon" aria-label="Edit Jonas Müller"><svg class="mn-icon" aria-hidden="true"><use href="#i-edit"/></svg></button></td></tr></tbody></table></div></section>
+        <form class="mn-card" onsubmit="event.preventDefault();Menara.toast('Invite sent (demo)')">
+          <div class="mn-card-head"><div><h2>Invite someone</h2><p>They get an email with a sign-in link</p></div></div>
+          <div class="mn-card-body">
+            <div class="mn-field"><label class="mn-label" for="iname">Name</label><input class="mn-input" id="iname" autocomplete="off"></div>
+            <div class="mn-field"><label class="mn-label" for="imail">Email</label><input class="mn-input" id="imail" type="email" autocomplete="off"></div>
+            <div class="mn-field"><label class="mn-label" for="irole">Role</label><select class="mn-select" id="irole"><option>Admin</option><option>Support</option></select></div>
+          </div>
+          <div class="mn-card-foot"><button class="mn-btn mn-btn-primary"><svg class="mn-icon" aria-hidden="true"><use href="#i-mail"/></svg>Send invite</button></div>
+        </form>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="../js/menara.js" defer></script>
+</body>
+</html>

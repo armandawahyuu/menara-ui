@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard · Menara UI</title>
+<meta name="description" content="Menara UI — free HTML/CSS admin dashboard and storefront template.">
+<script data-mn-theme-init>try{var t=localStorage.getItem('mn-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/menara.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232451c7'/%3E%3Cpath d='M16 6v4M11 26l5-16 5 16M13 20h6' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="mn-skip" href="#main">Skip to content</a>
+<div class="mn-app">
+  <aside class="mn-sidebar" aria-label="Main navigation">
+    <a class="mn-brand" href="index.html"><span class="mn-brand-mark"><svg class="mn-icon" aria-hidden="true"><use href="#i-tower"/></svg></span><span><b>Menara</b><small>Admin</small></span></a>
+    <nav class="mn-nav">
+      <div class="mn-nav-label">Overview</div><a class="mn-nav-link" href="index.html" aria-current="page"><svg class="mn-icon" aria-hidden="true"><use href="#i-home"/></svg>Dashboard</a><a class="mn-nav-link" href="analytics.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-chart"/></svg>Analytics</a><a class="mn-nav-link" href="reports.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-receipt"/></svg>Reports</a><div class="mn-nav-label">Store</div><a class="mn-nav-link" href="table.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-table"/></svg>Orders<span class="mn-nav-count">12</span></a><a class="mn-nav-link" href="form.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-package"/></svg>Products</a><a class="mn-nav-link" href="import.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-upload"/></svg>Import</a><div class="mn-nav-label">Settings</div><a class="mn-nav-link" href="users.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-users"/></svg>Users</a><a class="mn-nav-link" href="settings.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-settings"/></svg>Settings</a>
+    </nav>
+    <div class="mn-sidebar-foot">
+      <a class="mn-nav-link" href="../index.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-layers"/></svg>All templates</a>
+      <a class="mn-nav-link" href="login.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-logout"/></svg>Sign out</a>
+    </div>
+  </aside>
+  <div class="mn-scrim"></div>
+  <div class="mn-main">
+    <header class="mn-topbar">
+      <button type="button" class="mn-btn mn-btn-outline mn-btn-icon mn-burger" data-mn-sidebar-toggle aria-label="Open menu" aria-expanded="false"><svg class="mn-icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+      <label class="mn-search" style="width:min(360px,100%)"><span class="mn-sr-only">Search</span><svg class="mn-icon" aria-hidden="true"><use href="#i-search"/></svg><input class="mn-input" type="search" placeholder="Search orders, products…"></label>
+      <div class="mn-topbar-actions">
+        <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" data-mn-theme-toggle aria-label="Switch to dark mode"><svg class="mn-icon" aria-hidden="true"><use href="#i-moon"/></svg></button>
+        <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" aria-label="Notifications"><svg class="mn-icon" aria-hidden="true"><use href="#i-bell"/></svg></button>
+        <details class="mn-dropdown">
+          <summary class="mn-btn mn-btn-ghost" aria-label="Account menu"><span class="mn-avatar">AR</span></summary>
+          <div class="mn-menu">
+            <a href="users.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-user"/></svg>Profile</a>
+            <a href="settings.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-settings"/></svg>Settings</a>
+            <hr>
+            <a href="login.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-logout"/></svg>Sign out</a>
+          </div>
+        </details>
+      </div>
+    </header>
+    <main class="mn-content" id="main">
+      <div class="mn-page-head">
+        <div><h1>Dashboard</h1></div>
+        <div><a class="mn-btn mn-btn-outline" href="reports.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-download"/></svg>Export</a><a class="mn-btn mn-btn-primary" href="form.html"><svg class="mn-icon" aria-hidden="true"><use href="#i-plus"/></svg>New product</a></div>
+      </div>
+
+      <div class="mn-grid mn-grid-4" style="margin-bottom:var(--mn-space-5)">
+        <div class="mn-card mn-kpi"><span class="mn-kpi-icon"><svg class="mn-icon" aria-hidden="true"><use href="#i-wallet"/></svg></span><div><span class="mn-kpi-label">Revenue today</span><b class="mn-kpi-value">$2,480.50</b><span class="mn-kpi-meta"><span class="mn-up">+12.4%</span> vs yesterday</span></div></div>
+        <div class="mn-card mn-kpi"><span class="mn-kpi-icon is-success"><svg class="mn-icon" aria-hidden="true"><use href="#i-receipt"/></svg></span><div><span class="mn-kpi-label">Orders</span><b class="mn-kpi-value">184</b><span class="mn-kpi-meta"><span class="mn-up">+8</span> since 9:00</span></div></div>
+        <div class="mn-card mn-kpi"><span class="mn-kpi-icon is-warning"><svg class="mn-icon" aria-hidden="true"><use href="#i-trend"/></svg></span><div><span class="mn-kpi-label">Net profit (month)</span><b class="mn-kpi-value">$18,920</b><span class="mn-kpi-meta">Margin 31%</span></div></div>
+        <div class="mn-card mn-kpi"><span class="mn-kpi-icon is-danger"><svg class="mn-icon" aria-hidden="true"><use href="#i-package"/></svg></span><div><span class="mn-kpi-label">Low stock</span><b class="mn-kpi-value">3 products</b><span class="mn-kpi-meta">Restock soon</span></div></div>
+      </div>
+      <div class="mn-grid mn-grid-main">
+        <div class="mn-stack">
+          <section class="mn-card">
+            <div class="mn-card-head"><div><h2>Sales, last 7 days</h2><p>Orders per day · today highlighted</p></div><a class="mn-link" href="analytics.html">Analytics <svg class="mn-icon mn-icon-sm" aria-hidden="true"><use href="#i-arrow-right"/></svg></a></div>
+            <div class="mn-card-body"><div class="mn-bars" role="img" aria-label="Bar chart: Mon 42, Tue 58, Wed 51, Thu 77, Fri 64, Sat 88, Today 96"><div class="mn-bar" style="--v:0.44" title="Mon: 42"><span class="mn-bar-value">42</span><i></i><span class="mn-bar-label">Mon</span></div><div class="mn-bar" style="--v:0.60" title="Tue: 58"><span class="mn-bar-value">58</span><i></i><span class="mn-bar-label">Tue</span></div><div class="mn-bar" style="--v:0.53" title="Wed: 51"><span class="mn-bar-value">51</span><i></i><span class="mn-bar-label">Wed</span></div><div class="mn-bar" style="--v:0.80" title="Thu: 77"><span class="mn-bar-value">77</span><i></i><span class="mn-bar-label">Thu</span></div><div class="mn-bar" style="--v:0.67" title="Fri: 64"><span class="mn-bar-value">64</span><i></i><span class="mn-bar-label">Fri</span></div><div class="mn-bar" style="--v:0.92" title="Sat: 88"><span class="mn-bar-value">88</span><i></i><span class="mn-bar-label">Sat</span></div><div class="mn-bar is-current" style="--v:1.00" title="Today: 96"><span class="mn-bar-value">96</span><i></i><span class="mn-bar-label">Today</span></div></div></div>
+          </section>
+          <section class="mn-card">
+            <div class="mn-card-head"><div><h2>Recent orders</h2><p>Latest 5 transactions</p></div><a class="mn-btn mn-btn-outline mn-btn-sm" href="table.html">View all</a></div>
+            <div class="mn-table-wrap"><table class="mn-table">
+      <thead><tr><th>Order</th><th>Customer</th><th>Product</th><th class="is-right">Amount</th><th>Status</th></tr></thead>
+      <tbody><tr>
+          <td class="is-nowrap"><b class="mn-mono">MN-24081</b><span class="mn-cell-sub">2 min ago</span></td>
+          <td><span class="mn-cell-title">Maya Putri</span><span class="mn-cell-sub mn-truncate" style="max-width:28ch">maya@example.com</span></td>
+          <td><span class="mn-cell-title" title="Cloud Storage 100 GB">Cloud Storage 100 GB</span></td>
+          <td class="is-right is-nowrap mn-num"><b>$12.00</b></td>
+          <td><span class="mn-badge mn-badge-success">Paid</span></td>
+          
+        </tr><tr>
+          <td class="is-nowrap"><b class="mn-mono">MN-24080</b><span class="mn-cell-sub">8 min ago</span></td>
+          <td><span class="mn-cell-title">Alexandria Montgomery-Washington</span><span class="mn-cell-sub mn-truncate" style="max-width:28ch">alexandria.montgomery-washington@example-company.com</span></td>
+          <td><span class="mn-cell-title" title="Design Asset Pack — Ultimate Bundle (icons, mockups, fonts, 3D scenes)">Design Asset Pack — Ultimate Bundle (icons, mockups, fonts, 3D scenes)</span></td>
+          <td class="is-right is-nowrap mn-num"><b>$149.00</b></td>
+          <td><span class="mn-badge mn-badge-warning">Pending</span></td>
+          
+        </tr><tr>
+          <td class="is-nowrap"><b class="mn-mono">MN-24079</b><span class="mn-cell-sub">21 min ago</span></td>
+          <td><span class="mn-cell-title">Budi Santoso</span><span class="mn-cell-sub mn-truncate" style="max-width:28ch">budi@example.com</span></td>
+          <td><span class="mn-cell-title" title="Streaming Pass · 30 days">Streaming Pass · 30 days</span></td>
+          <td class="is-right is-nowrap mn-num"><b>$9.50</b></td>
+          <td><span class="mn-badge mn-badge-success">Paid</span></td>
+          
+        </tr><tr>
+          <td class="is-nowrap"><b class="mn-mono">MN-24078</b><span class="mn-cell-sub">1 h ago</span></td>
+          <td><span class="mn-cell-title">Chen Wei</span><span class="mn-cell-sub mn-truncate" style="max-width:28ch">chen.wei@example.com</span></td>
+          <td><span class="mn-cell-title" title="E-book Bundle: Product Design">E-book Bundle: Product Design</span></td>
+          <td class="is-right is-nowrap mn-num"><b>$24.00</b></td>
+          <td><span class="mn-badge mn-badge-danger">Failed</span></td>
+          
+        </tr><tr>
+          <td class="is-nowrap"><b class="mn-mono">MN-24077</b><span class="mn-cell-sub">2 h ago</span></td>
+          <td><span class="mn-cell-title">Sofia Rossi</span><span class="mn-cell-sub mn-truncate" style="max-width:28ch">sofia@example.com</span></td>
+          <td><span class="mn-cell-title" title="Domain .com · 1 year">Domain .com · 1 year</span></td>
+          <td class="is-right is-nowrap mn-num"><b>$11.99</b></td>
+          <td><span class="mn-badge mn-badge-neutral">Expired</span></td>
+          
+        </tr></tbody></table></div>
+          </section>
+        </div>
+        <div class="mn-stack">
+          <section class="mn-card">
+            <div class="mn-card-head"><div><h2>Stock</h2><p>Codes / licenses left</p></div><a class="mn-link" href="import.html">Import</a></div>
+            <div class="mn-meter-row"><span>Cloud Storage 100 GB</span><b class="mn-num">128</b><div class="mn-meter is-success" style="--v:.86"><i></i></div></div>
+            <div class="mn-meter-row"><span>Streaming Pass · 30 days</span><b class="mn-num">41</b><div class="mn-meter is-success" style="--v:.55"><i></i></div></div>
+            <div class="mn-meter-row"><span>Design Asset Pack</span><b class="mn-num">4</b><div class="mn-meter is-warning" style="--v:.12"><i></i></div></div>
+            <div class="mn-meter-row"><span>Domain .com · 1 year</span><b class="mn-num">0</b><div class="mn-meter is-danger" style="--v:.02"><i></i></div></div>
+          </section>
+          <div class="mn-alert mn-alert-warning" role="status"><svg class="mn-icon" aria-hidden="true"><use href="#i-alert"/></svg><div><b>Domain .com is out of stock</b><p>It shows as “Sold out” in the store. <a href="import.html">Import new codes</a>.</p></div><button type="button" class="mn-btn mn-btn-ghost mn-btn-sm mn-btn-icon" data-mn-dismiss aria-label="Dismiss"><svg class="mn-icon" aria-hidden="true"><use href="#i-x"/></svg></button></div>
+          <section class="mn-card">
+            <div class="mn-card-head"><div><h2>Top products</h2><p>This month</p></div></div>
+            <div class="mn-meter-row"><span>Cloud Storage 100 GB</span><span class="mn-num mn-muted">412 sold</span><div class="mn-meter" style="--v:1"><i></i></div></div>
+            <div class="mn-meter-row"><span>Streaming Pass · 30 days</span><span class="mn-num mn-muted">288 sold</span><div class="mn-meter" style="--v:.7"><i></i></div></div>
+            <div class="mn-meter-row"><span>E-book Bundle</span><span class="mn-num mn-muted">96 sold</span><div class="mn-meter" style="--v:.23"><i></i></div></div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="../js/menara.js" defer></script>
+</body>
+</html>

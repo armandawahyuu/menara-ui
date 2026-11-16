@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in · Menara UI</title>
+<meta name="description" content="Menara UI — free HTML/CSS admin dashboard and storefront template.">
+<script data-mn-theme-init>try{var t=localStorage.getItem('mn-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/menara.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232451c7'/%3E%3Cpath d='M16 6v4M11 26l5-16 5 16M13 20h6' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<main class="mn-auth" id="main">
+  <section class="mn-auth-side" aria-hidden="true">
+    <span class="mn-brand" style="height:auto;padding:0;border:0"><span class="mn-brand-mark"><svg class="mn-icon" aria-hidden="true"><use href="#i-tower"/></svg></span><span><b>Menara</b><small>Admin</small></span></span>
+    <div><h2>Run your store from one calm place.</h2><p>Orders, stock, payments and reports, made readable on any screen.</p></div>
+    <span style="font-size:var(--mn-text-xs);opacity:.7">© 2026 Menara</span>
+  </section>
+  <div class="mn-auth-main">
+    <form class="mn-auth-card" action="index.html">
+      <div class="mn-row" style="justify-content:space-between;margin-bottom:var(--mn-space-7)"><a class="mn-brand" style="height:auto;padding:0;border:0;color:var(--mn-ink)" href="../index.html"><span class="mn-brand-mark"><svg class="mn-icon" aria-hidden="true"><use href="#i-tower"/></svg></span><span><b>Menara</b><small>Admin</small></span></a><button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" data-mn-theme-toggle aria-label="Switch to dark mode"><svg class="mn-icon" aria-hidden="true"><use href="#i-moon"/></svg></button></div>
+      <h1>Welcome back</h1><p class="mn-muted" style="margin-bottom:var(--mn-space-6)">Sign in to manage your store.</p>
+      <div class="mn-field"><label class="mn-label" for="u">Username or email</label><input class="mn-input" id="u" autocomplete="username" required></div>
+      <div class="mn-field"><label class="mn-label" for="p">Password</label><input class="mn-input" id="p" type="password" autocomplete="current-password" required></div>
+      <div class="mn-row" style="justify-content:space-between;margin-bottom:var(--mn-space-5)"><label class="mn-check"><input type="checkbox"> Remember me</label><a href="#" class="mn-link">Forgot password?</a></div>
+      <button class="mn-btn mn-btn-primary mn-btn-lg mn-btn-block">Sign in</button>
+      <p class="mn-help" style="text-align:center;margin-top:var(--mn-space-5)">Demo only: any input goes to the dashboard.</p>
+    </form>
+  </div>
+</main>
+<script src="../js/menara.js" defer></script>
+</body>
+</html>

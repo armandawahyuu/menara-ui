@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Layout · Menara UI</title>
+<meta name="description" content="Menara UI — free HTML/CSS admin dashboard and storefront template.">
+<script data-mn-theme-init>try{var t=localStorage.getItem('mn-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/menara.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232451c7'/%3E%3Cpath d='M16 6v4M11 26l5-16 5 16M13 20h6' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="mn-skip" href="#main">Skip to content</a>
+<header class="mn-shop-header">
+  <div class="mn-container">
+    <a class="mn-brand" href="../index.html"><span class="mn-brand-mark"><svg class="mn-icon" aria-hidden="true"><use href="#i-tower"/></svg></span><span><b>Menara</b><small>Docs</small></span></a>
+    <nav aria-label="Site"><a href="../index.html">Templates</a><a href="index.html">Docs</a><a href="https://github.com/armandawahyuu/menara-ui">GitHub</a></nav>
+    <button type="button" class="mn-btn mn-btn-ghost mn-btn-icon" data-mn-theme-toggle aria-label="Switch to dark mode"><svg class="mn-icon" aria-hidden="true"><use href="#i-moon"/></svg></button>
+  </div>
+</header>
+<div class="mn-container mn-doc">
+  <nav class="mn-doc-nav" aria-label="Documentation"><a href="index.html">Getting started</a><a href="theming.html">Theming</a><a href="components.html">Components</a><a href="layout.html" aria-current="page">Layout</a><a href="accessibility.html">Accessibility</a></nav>
+  <main id="main" class="mn-prose">
+
+<h1>Layout</h1>
+<h2>Admin shell</h2>
+<p>A fixed dark sidebar (256px) and a sticky topbar. Below 1024px the sidebar becomes a drawer opened by the burger button. Escape or the dimmed backdrop closes it.</p>
+<div class="mn-snippet"><pre><code>&lt;body&gt;
+&lt;div class=&quot;mn-app&quot;&gt;
+  &lt;aside class=&quot;mn-sidebar&quot;&gt;
+    &lt;a class=&quot;mn-brand&quot; href=&quot;#&quot;&gt;…&lt;/a&gt;
+    &lt;nav class=&quot;mn-nav&quot;&gt;
+      &lt;div class=&quot;mn-nav-label&quot;&gt;Overview&lt;/div&gt;
+      &lt;a class=&quot;mn-nav-link&quot; href=&quot;#&quot; aria-current=&quot;page&quot;&gt;&lt;svg class=&quot;mn-icon&quot;&gt;&lt;use href=&quot;#i-home&quot;/&gt;&lt;/svg&gt;Dashboard&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/aside&gt;
+  &lt;div class=&quot;mn-scrim&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;mn-main&quot;&gt;
+    &lt;header class=&quot;mn-topbar&quot;&gt;
+      &lt;button class=&quot;mn-btn mn-btn-outline mn-btn-icon mn-burger&quot; data-mn-sidebar-toggle aria-label=&quot;Open menu&quot;&gt;&lt;svg class=&quot;mn-icon&quot;&gt;&lt;use href=&quot;#i-menu&quot;/&gt;&lt;/svg&gt;&lt;/button&gt;
+      &lt;div class=&quot;mn-topbar-actions&quot;&gt;&lt;button class=&quot;mn-btn mn-btn-ghost mn-btn-icon&quot; data-mn-theme-toggle aria-label=&quot;Toggle theme&quot;&gt;&lt;svg class=&quot;mn-icon&quot;&gt;&lt;use href=&quot;#i-moon&quot;/&gt;&lt;/svg&gt;&lt;/button&gt;&lt;/div&gt;
+    &lt;/header&gt;
+    &lt;main class=&quot;mn-content&quot; id=&quot;main&quot;&gt;
+      &lt;div class=&quot;mn-page-head&quot;&gt;&lt;div&gt;&lt;h1&gt;Page title&lt;/h1&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;!-- your content --&gt;
+    &lt;/main&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;js/menara.js&quot; defer&gt;&lt;/script&gt;
+&lt;/body&gt;</code></pre><button type="button" class="mn-btn mn-btn-outline mn-btn-sm" data-mn-copy="&lt;body&gt;
+&lt;div class=&quot;mn-app&quot;&gt;
+  &lt;aside class=&quot;mn-sidebar&quot;&gt;
+    &lt;a class=&quot;mn-brand&quot; href=&quot;#&quot;&gt;…&lt;/a&gt;
+    &lt;nav class=&quot;mn-nav&quot;&gt;
+      &lt;div class=&quot;mn-nav-label&quot;&gt;Overview&lt;/div&gt;
+      &lt;a class=&quot;mn-nav-link&quot; href=&quot;#&quot; aria-current=&quot;page&quot;&gt;&lt;svg class=&quot;mn-icon&quot;&gt;&lt;use href=&quot;#i-home&quot;/&gt;&lt;/svg&gt;Dashboard&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/aside&gt;
+  &lt;div class=&quot;mn-scrim&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;mn-main&quot;&gt;
+    &lt;header class=&quot;mn-topbar&quot;&gt;
+      &lt;button class=&quot;mn-btn mn-btn-outline mn-btn-icon mn-burger&quot; data-mn-sidebar-toggle aria-label=&quot;Open menu&quot;&gt;&lt;svg class=&quot;mn-icon&quot;&gt;&lt;use href=&quot;#i-menu&quot;/&gt;&lt;/svg&gt;&lt;/button&gt;
+      &lt;div class=&quot;mn-topbar-actions&quot;&gt;&lt;button class=&quot;mn-btn mn-btn-ghost mn-btn-icon&quot; data-mn-theme-toggle aria-label=&quot;Toggle theme&quot;&gt;&lt;svg class=&quot;mn-icon&quot;&gt;&lt;use href=&quot;#i-moon&quot;/&gt;&lt;/svg&gt;&lt;/button&gt;&lt;/div&gt;
+    &lt;/header&gt;
+    &lt;main class=&quot;mn-content&quot; id=&quot;main&quot;&gt;
+      &lt;div class=&quot;mn-page-head&quot;&gt;&lt;div&gt;&lt;h1&gt;Page title&lt;/h1&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;!-- your content --&gt;
+    &lt;/main&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;js/menara.js&quot; defer&gt;&lt;/script&gt;
+&lt;/body&gt;"><span data-mn-copy-label>Copy</span></button></div>
+<h2>Page header</h2>
+<p><code>.mn-page-head</code>: breadcrumb and <code>h1</code> on the left, actions on the right. Actions wrap under the title on phones.</p>
+<h2>Grids</h2>
+<ul><li><code>mn-grid mn-grid-4</code>: KPI row. 4 → 2 columns below 1100px.</li><li><code>mn-grid mn-grid-main</code>: main column + side column (about 62/38). Stacks below 1100px.</li><li><code>mn-grid-2</code>, <code>mn-grid-3</code>: even columns.</li><li><code>mn-stack</code>: vertical rhythm inside a column.</li></ul>
+<h2>Storefront</h2>
+<p><code>&lt;body class="mn-shop"&gt;</code> + <code>.mn-shop-header</code> + <code>&lt;main class="mn-container"&gt;</code> (max 1120px). <code>.mn-bottom-nav</code> shows on phones only. Keep it to four items.</p>
+<h2>Breakpoints</h2>
+<ul><li>360px: smallest supported width. Nothing scrolls sideways.</li><li>560px: topbar search hides.</li><li>640px: forms become one column. KPIs get smaller.</li><li>900px: store top nav ↔ bottom nav.</li><li>1024px: admin sidebar ↔ drawer.</li><li>1100px: multi-column grids collapse.</li></ul>
+<h2>Rules</h2>
+<ul><li>Tables scroll inside <code>.mn-table-wrap</code>, never the page.</li><li>Use cards for summaries and tables for lists people scan or sort.</li><li>One primary button per view.</li><li>Long names get <code>.mn-cell-title</code> (truncates) or wrap. Numbers get <code>.mn-num</code> and right alignment.</li></ul>
+  </main>
+</div>
+<script src="../js/menara.js" defer></script>
+</body>
+</html>
